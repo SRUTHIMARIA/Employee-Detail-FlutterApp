@@ -11,6 +11,12 @@ class HomePage extends GetView<DataController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: const [
+          Padding(
+            padding: EdgeInsets.all(14.0),
+            child: Icon(Icons.search,color: Colors.white,size: 30,),
+          )
+        ],
         toolbarHeight: 80.0,
         backgroundColor: Colors.indigo,
         centerTitle: true,
